@@ -1,0 +1,84 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "3tzMpJm6XNAEc8PSE2554T",
+      "projectApiToken": "SMn0h90N0LJJjq9jsEECYIdRuZIMFRi7kIs0LuEIrUjS7Xyivlmrl80eSKg8PvdV1XFmheCCloeECmg",
+      "projectName": "NextJS Supabase Plasmic Starter",
+      "version": "latest",
+      "cssFilePath": "plasmic/next_js_supabase_plasmic_starter/plasmic.module.css",
+      "components": [
+        {
+          "id": "K7MSRE90jOC5",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "3tzMpJm6XNAEc8PSE2554T",
+          "renderModuleFilePath": "plasmic/next_js_supabase_plasmic_starter/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/next_js_supabase_plasmic_starter/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "u8jaJy11Gwz1",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "4pYHcWarfCbw",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "RFuzxEronnaC",
+        "name": "Screen",
+        "projectId": "3tzMpJm6XNAEc8PSE2554T",
+        "contextFilePath": "plasmic/next_js_supabase_plasmic_starter/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../app"
+  },
+  "cliVersion": "0.1.329",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.329/dist/plasmic.schema.json"
+}
