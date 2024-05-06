@@ -65,7 +65,6 @@ import AuthButton from "../../AuthButton"; // plasmic-import: CEK8xiV_bHpe/compo
 import Button from "../../Button"; // plasmic-import: MWDCiKKFklmB/component
 
 import { useScreenVariants as useScreenVariantsrFuzxEronnaC } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: RFuzxEronnaC/globalVariant
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -153,8 +152,7 @@ function PlasmicHeader__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsrFuzxEronnaC(),
-    theme: useTheme()
+    screen: useScreenVariantsrFuzxEronnaC()
   });
 
   return (
@@ -173,11 +171,6 @@ function PlasmicHeader__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.root,
         {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          ),
           [sty.rootmode_loggingIn]: hasVariant($state, "mode", "loggingIn"),
           [sty.rootmode_typical]: hasVariant($state, "mode", "typical")
         }

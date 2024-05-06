@@ -64,8 +64,6 @@ import {
 import Layout from "../../Layout"; // plasmic-import: NVPq-3SR60hB/component
 import Body from "../../Body"; // plasmic-import: iMUlEAuTPQf8/component
 
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 3tzMpJm6XNAEc8PSE2554T/projectcss
@@ -123,10 +121,6 @@ function PlasmicDocumentation__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
-
   return (
     <React.Fragment>
       <Head></Head>
@@ -149,14 +143,7 @@ function PlasmicDocumentation__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            sty.root,
-            {
-              [projectcss.global_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            }
+            sty.root
           )}
         >
           <Layout

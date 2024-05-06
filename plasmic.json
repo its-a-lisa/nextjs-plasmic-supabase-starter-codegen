@@ -257,12 +257,6 @@
         "name": "Screen",
         "projectId": "3tzMpJm6XNAEc8PSE2554T",
         "contextFilePath": "plasmic/next_js_supabase_plasmic_starter/PlasmicGlobalVariant__Screen.tsx"
-      },
-      {
-        "id": "LulP9vjpN0to",
-        "name": "Theme",
-        "projectId": "3tzMpJm6XNAEc8PSE2554T",
-        "contextFilePath": "plasmic/next_js_supabase_plasmic_starter/PlasmicGlobalVariant__Theme.tsx"
       }
     ]
   },

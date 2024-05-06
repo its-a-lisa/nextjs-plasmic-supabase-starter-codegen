@@ -64,7 +64,6 @@ import {
 import Button from "../../Button"; // plasmic-import: MWDCiKKFklmB/component
 
 import { useScreenVariants as useScreenVariantsrFuzxEronnaC } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: RFuzxEronnaC/globalVariant
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -130,8 +129,7 @@ function PlasmicFooter__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsrFuzxEronnaC(),
-    theme: useTheme()
+    screen: useScreenVariantsrFuzxEronnaC()
   });
 
   return (
@@ -146,14 +144,7 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root,
-        {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          )
-        }
+        sty.root
       )}
     >
       <Stack__

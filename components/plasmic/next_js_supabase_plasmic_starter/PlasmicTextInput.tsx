@@ -63,8 +63,6 @@ import {
 
 import * as pp from "@plasmicapp/react-web";
 
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 3tzMpJm6XNAEc8PSE2554T/projectcss
@@ -259,10 +257,6 @@ function PlasmicTextInput__RenderFunc(props: {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -277,11 +271,6 @@ function PlasmicTextInput__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.root,
         {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          ),
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.rootcolor_dark]: hasVariant($state, "color", "dark"),
           [sty.rootisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),

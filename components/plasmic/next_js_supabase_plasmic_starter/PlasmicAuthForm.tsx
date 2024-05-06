@@ -64,8 +64,6 @@ import {
 import TextInput from "../../TextInput"; // plasmic-import: 0cGnQaHwOkjt/component
 import Button from "../../Button"; // plasmic-import: MWDCiKKFklmB/component
 
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 3tzMpJm6XNAEc8PSE2554T/projectcss
@@ -177,10 +175,6 @@ function PlasmicAuthForm__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
-
   return (
     <div
       data-plasmic-name={"credentialForm"}
@@ -195,11 +189,6 @@ function PlasmicAuthForm__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.credentialForm,
         {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          ),
           [sty.credentialFormmode_checkEmail]: hasVariant(
             $state,
             "mode",

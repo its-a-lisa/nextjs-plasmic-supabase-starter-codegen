@@ -65,8 +65,6 @@ import Header from "../../Header"; // plasmic-import: w0j6EBn_PmEA/component
 import Body from "../../Body"; // plasmic-import: iMUlEAuTPQf8/component
 import Footer from "../../Footer"; // plasmic-import: WOYhHz75e0Of/component
 
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 3tzMpJm6XNAEc8PSE2554T/projectcss
@@ -150,10 +148,6 @@ function PlasmicLayout__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -168,11 +162,6 @@ function PlasmicLayout__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.root,
         {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          ),
           [sty.rootmode_logginIn]: hasVariant($state, "mode", "logginIn"),
           [sty.rootmode_typical]: hasVariant($state, "mode", "typical")
         }

@@ -63,8 +63,6 @@ import {
 
 import * as pp from "@plasmicapp/react-web";
 
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: LulP9vjpN0to/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 3tzMpJm6XNAEc8PSE2554T/projectcss
@@ -221,10 +219,6 @@ function PlasmicButton__RenderFunc(props: {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
-
   return (
     <Stack__
       as={"button"}
@@ -242,11 +236,6 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.root,
         {
-          [projectcss.global_theme_dark]: hasVariant(
-            globalVariants,
-            "theme",
-            "dark"
-          ),
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.rootcolor_blue]: hasVariant($state, "color", "blue"),
           [sty.rootcolor_clear]: hasVariant($state, "color", "clear"),
