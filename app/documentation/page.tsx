@@ -4,7 +4,6 @@ import * as React from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/host";
 
 import { ScreenVariantProvider } from "../../components/plasmic/next_js_supabase_plasmic_starter/PlasmicGlobalVariant__Screen";
-import { ThemeContext } from "../../components/plasmic/next_js_supabase_plasmic_starter/PlasmicGlobalVariant__Theme";
 import { PlasmicDocumentation } from "../../components/plasmic/next_js_supabase_plasmic_starter/PlasmicDocumentation";
 
 function Documentation({
@@ -31,11 +30,9 @@ function Documentation({
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <ThemeContext.Provider value={undefined}>
       <PageParamsProvider__ params={params} query={searchParams}>
         <PlasmicDocumentation />
       </PageParamsProvider__>
-    </ThemeContext.Provider>
   );
 }
 
