@@ -1,0 +1,155 @@
+.credentialForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  background: var(--token-Xfkr8BLsDL0O);
+}
+.h3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  min-width: 0;
+}
+.h3mode_checkEmail {
+  display: none;
+}
+.inputSection {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.inputSectionmode_checkEmail {
+  display: none;
+}
+.emailFormField {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__kQtXw {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.emailInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__crsXu {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__zIpAh {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.passwordFormField {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__fLCzw {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.passwordInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__g9Dn3 {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__bff5D {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.actionSection {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.actionSectionmode_checkEmail {
+  display: none;
+}
+.submitButton:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__f82Qp {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__hEHj {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.text__zs4Zu {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.text__uPtig {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  display: none;
+}
+.textmode_checkEmail__uPtiGn0KQx {
+  display: block;
+}
